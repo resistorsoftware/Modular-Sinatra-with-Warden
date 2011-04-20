@@ -1,0 +1,44 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activemodel (3.0.6)
+      activesupport (= 3.0.6)
+      builder (~> 2.1.2)
+      i18n (~> 0.5.0)
+    activerecord (3.0.6)
+      activemodel (= 3.0.6)
+      activesupport (= 3.0.6)
+      arel (~> 2.0.2)
+      tzinfo (~> 0.3.23)
+    activesupport (3.0.6)
+    arel (2.0.9)
+    bcrypt-ruby (2.1.4)
+    builder (2.1.2)
+    haml (3.0.25)
+    i18n (0.5.0)
+    pg (0.10.1)
+    rack (1.2.2)
+    rack-flash (0.1.1)
+      rack
+    sinatra (1.2.3)
+      rack (~> 1.1)
+      tilt (>= 1.2.2, < 2.0)
+    sinatra-activerecord (0.1.3)
+      sinatra (>= 0.9.4)
+    tilt (1.2.2)
+    tzinfo (0.3.26)
+    warden (1.0.3)
+      rack (>= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord
+  bcrypt-ruby
+  haml
+  pg
+  rack-flash
+  sinatra
+  sinatra-activerecord
+  warden

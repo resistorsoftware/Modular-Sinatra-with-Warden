@@ -1,0 +1,27 @@
+- unless flash[:notice].nil?
+  %p Flash!!! #{flash[:notice]}
+  
+%h1 Admin Login
+#login
+  %form#login_form{:method => 'post', :action => '/admin/login'}
+    %fieldset
+      %legend Public Login 
+      %ul
+        %li
+          %label{:for => "email"} Email
+          %input#email{:type => "text", :value => "#{params[:email]}", :name => "email"}
+        %li
+          %label{:for => "password"} Password
+          %input#password{:type => "password", :value => "", :name => "password"}
+        %li
+          %button.login{:type => "submit"} Login
+   
+:javascript
+  $(function() {
+    $("#login_form").keypress(function(e) {
+      if ((e.which && e.which == 13)) {
+        $("#vendor_login_form").submit();
+      }
+      return true;
+    });
+  });

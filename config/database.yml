@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  database: poobah_development
+  username: poobah
+  password: poobah
+
+test:
+  adapter: postgresql
+  database: poobah_test
+  username: poobah
+  password: poobah
+
+production:
+  adapter: postgresql
+  database: poobah_production
+  username: poobah
+  password: poobah

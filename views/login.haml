@@ -1,0 +1,18 @@
+- unless flash[:notice].nil?
+  %p Flash!!! #{flash[:notice]}
+  
+%h1 Public Login
+#login
+  %form#login_form{:method => 'post', :action => '/login'}
+    %fieldset
+      %legend Public Login 
+      %ul
+        %li
+          %label{:for => "email"} Email
+          %input#email{:type => "text", :value => "#{params[:email]}", :name => "email"}
+        %li
+          %label{:for => "password"} Password
+          %input#password{:type => "password", :value => "", :name => "password"}
+        %li
+          %button.login{:type => "submit"} Login
+   
